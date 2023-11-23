@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Converter</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./upr_twr.js"></script>
+  </head>
+  <body>
+    <h1 class="heading">Convert Your Letters</h1>
+    <div class="container">
+      <input
+        type="text"
+        onblur="get_text()"
+        name="text"
+        id="text"
+        placeholder="Enter Text"
+        required />
+      <div class="btns">
+        <button type="submit" onclick="Upr()" class="btn">UpperCase</button>
+        <button type="submit" onclick="Lwr()" class="btn">LowerCase</button>
+        <button type="submit" onclick="Lnt()" class="btn">Legnth</button>
+      </div>
+      <h2 id="change"></h2>
+      <button onclick="Clr()" class="clear">Clear All</button>
+    </div>
+  </body>
+</html>
