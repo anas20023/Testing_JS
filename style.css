@@ -32,7 +32,7 @@ button
     background: #333;
     color: #ffff;
     margin: 10px;
-    transition: all 0.3s ease;
+    transition: all 1s cubic-bezier(0.79, 0.33, 0.14, 0.53);
 }
 #text
 {
@@ -83,3 +83,46 @@ button
     transition: all 0.3s ease;
 
 }
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+svg {
+	font-family: "Poppins", sans-serif;
+	width: 100%; height: 100%;
+}
+svg text {
+	animation: stroke 5s infinite alternate;
+	stroke-width: 2;
+	stroke: #365FA0;
+	font-size: 111px;
+}
+.follow_btn
+{
+    position: absolute;
+    top: 88%;
+    padding: 8px 10px;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    background: #ffff;
+    color: #333;
+    border: 1px solid #333;
+    margin: 10px;
+    transition: all 1s cubic-bezier(0.79, 0.33, 0.14, 0.53);
+}
+@keyframes stroke {
+	0%   {
+		fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1); }
+	80%  {fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1); stroke-width: 3; }
+	100% {
+		fill: rgba(72,138,204,1); stroke: rgba(54,95,160,0);
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
+
+.wrapper {background-color: #FFFFFF};
